@@ -7,16 +7,18 @@
     <title>Food Website</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <body>
     <header>
         <a href="#" class="logo">Food <span>Gallery</span></a>
         <nav class="navbar">
-            <a href="">Home</a>
-            <a href="">Dishes</a>
-            <a href="">About</a>
-            <a href="">Review</a>
+            <a href="#home" class="active">Home</a>
+            <a href="#Dishes">Dishes</a>
+            <a href="#About">About</a>
+            <a href="#Review">Review</a>
         </nav>
         <div class="activity-section">
             <i class="bx bx-search"></i>
@@ -27,7 +29,7 @@
         <button class="btn">Login</button>
     </header>
 
-    <section class="home-section">
+    <section class="home-section" id="Home">
         <div class="text-content">
             <h5>Most Ordered in Rainy Season</h5>
             <h2>Jumbo Burger</h2>
@@ -42,7 +44,7 @@
         </div>
     </section>
 
-    <section class="Dishe-section">
+    <section class="Dishe-section" id="Dishes">
         <h2 class="heading">Our <span>Dishes</span></h2>
         <div class="dishGallery">
             <div class="food-image">
@@ -101,7 +103,7 @@
         </div>
     </section>
 
-    <section class="about-section">
+    <section class="about-section" id="About">
 
         <h2 class="heading">OUR SPECIAL <span>CHIEF's</span></h2>
 
@@ -188,28 +190,161 @@
         </div>
     </section>
 
-    <section class="Review-section">
+    <section class="Review-section" id="Review">
         <h2 class="heading">What's our <span>Client say</span></h2>
-        <div class="swiper">
-            <div class="review-image-section">
-                <img src="images/man1.jpg" alt="">
-                <div class="review-text">
-                    <h2>Justin B.</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis eligendi asperiores recusandae,
-                        minima molestiae neque quisquam voluptate, illo itaque obcaecati ullam reprehenderit, esse
-                        laborum eos necessitatibus tempore dolore aut aspernatur.</p>
-                    <h2>Student</h2>
-                    <div class="star">
-                        <i class='bx bx-star'></i>
-                        <i class='bx bx-star'></i>
-                        <i class='bx bx-star'></i>
-                        <i class='bx bx-star'></i>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="review-image-section">
+                        <img src="images/man1.jpg" alt="">
+                        <div class="review-text">
+                            <h2>Hari Reshmi</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis eligendi asperiores
+                                recusandae,
+                                minima molestiae neque quisquam voluptate, illo itaque obcaecati ullam reprehenderit,
+                                esse
+                                laborum eos necessitatibus tempore dolore aut aspernatur. </p>
+                            <h5>Student</h5>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review-image-section">
+                        <img src="images/man2.jpg" alt="">
+                        <div class="review-text">
+                            <h2>Om Pandey.</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis eligendi asperiores
+                                recusandae,
+                                minima molestiae neque quisquam voluptate, illo itaque obcaecati ullam reprehenderit,
+                                esse
+                                laborum eos necessitatibus tempore dolore aut aspernatur. </p>
+                            <h5>Student</h5>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review-image-section">
+                        <img src="images/man3.jpg" alt="">
+                        <div class="review-text">
+                            <h2>Ashu Rawat</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis eligendi asperiores
+                                recusandae,
+                                minima molestiae neque quisquam voluptate, illo itaque obcaecati ullam reprehenderit,
+                                esse
+                                laborum eos necessitatibus tempore dolore aut aspernatur. </p>
+                            <h5>Student</h5>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review-image-section">
+                        <img src="images/man4.jpg" alt="">
+                        <div class="review-text">
+                            <h2>Aman Rawat.</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis eligendi asperiores
+                                recusandae,
+                                minima molestiae neque quisquam voluptate, illo itaque obcaecati ullam reprehenderit,
+                                esse
+                                laborum eos necessitatibus tempore dolore aut aspernatur. </p>
+                            <h5>Student</h5>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review-image-section">
+                        <img src="images/man5.jpg" alt="">
+                        <div class="review-text">
+                            <h2>Aditya Dhimaan</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis eligendi asperiores
+                                recusandae,
+                                minima molestiae neque quisquam voluptate, illo itaque obcaecati ullam reprehenderit,
+                                esse
+                                laborum eos necessitatibus tempore dolore aut aspernatur. </p>
+                            <h5>Student</h5>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review-image-section">
+                        <img src="images/man6.jpg" alt="">
+                        <div class="review-text">
+                            <h2>Vishal Verma</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis eligendi asperiores
+                                recusandae,
+                                minima molestiae neque quisquam voluptate, illo itaque obcaecati ullam reprehenderit,
+                                esse
+                                laborum eos necessitatibus tempore dolore aut aspernatur. </p>
+                            <h5>Student</h5>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
+
+    <footer>
+        <div class="innerItem">
+            <h2>Food <span>Gallery</span></h2>
+            <div class="textbar">
+                <a href="#">Home</a>
+                <a href="#">Dishes</a>
+                <a href="#">About</a>
+                <a href="#">Review</a>
+            </div>
+
+            <div class="footer-icon">
+                <i class='bx bxl-facebook'></i>
+                <i class='bx bxl-instagram'></i>
+                <i class='bx bxl-twitter'></i>
+                <i class='bx bxl-vk'></i>
+            </div>
+        </div>
+        <hr>
+        <p>copyright@hariReshmi</p>
+    </footer>
+    <script type="module" src="script.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </body>
 
 </html>

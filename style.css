@@ -24,6 +24,7 @@ header {
     align-items: center;
     background: #e8e7e7;
     box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    z-index: 100;
 }
 
 header .logo {
@@ -45,6 +46,11 @@ header .navbar a {
     font-weight: 500;
     padding: 5px 10px;
     border-radius: 5px;
+}
+
+.navbar a.active {
+    background-color: #25ad61;
+    color: #fff;
 }
 
 .activity-section i {
@@ -342,7 +348,6 @@ section {
 }
 
 .chef-image {
-    margin-top: 5%;
     height: 450px;
     width: 320px;
     display: flex;
@@ -439,12 +444,12 @@ section {
 }
 
 .icon-section {
-    display: flex; 
+    display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    margin-bottom: 50px; 
-    width: 100%;  
+    margin-bottom: 50px;
+    width: 100%;
 }
 
 .icon-text {
@@ -495,20 +500,102 @@ section {
 }
 
 .Review-section .swiper {
-    display: flex;
     height: 100%;
     width: 100%;
 }
 
 .review-image-section {
-    border: 3px solid black;
     height: 354px;
     display: flex;
     margin-left: 35px;
+    width: 100%;
     justify-content: center;
     align-items: center;
+    padding: 10rem 0% 3rem;
 }
 
 .review-image-section img {
-    height: 300px;
+    height: 354px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.review-image-section .review-text {
+    margin-left: 35px;
+}
+
+.review-text h2 {
+    font-size: 30px;
+    color: #444;
+    font-weight: 600;
+}
+
+.review-text p {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #555;
+    font-weight: 600;
+    max-width: 750px;
+}
+
+.review-text h5 {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #444;
+}
+
+.star i {
+    margin-top: 10px;
+    color: yellow;
+    font-size: 15px;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+footer {
+    height: 20vh;
+    background: #111;
+    padding: 20px 60px;
+}
+
+.innerItem {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.innerItem .textbar a {
+    text-decoration: none;
+    color: #c1c1c1;
+    margin-left: 35px;
+}
+
+.innerItem .footer-icon i {
+    padding: 5px;
+    font-size: 25px;
+    margin-left: 20px;
+    background-color: #25ad61;
+    border-radius: 50%;
+    color: #111;
+}
+
+
+footer p {
+    font-size: 16px;
+    color: #c1c1c1;
+    margin: 20px auto;
+    font-weight: 500;
+    text-align: center;
+}
+
+.innerItem h2 {
+    color: #e8e7e7;
 }
