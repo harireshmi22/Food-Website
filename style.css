@@ -1,0 +1,514 @@
+@import url("https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e8e7e7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+}
+
+header .logo {
+    color: #222;
+    font-size: 2em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+header a span {
+    color: #25ad61;
+}
+
+header .navbar a {
+    color: #000;
+    text-decoration: none;
+    margin-left: 35px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.activity-section i {
+    color: #222;
+    font-size: 1.6em;
+    margin-left: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    transition: .3s;
+
+    &:hover {
+        background-color: #25ad61;
+        color: white;
+    }
+}
+
+.btn {
+    height: 50px;
+    width: 140px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1em;
+    outline: none;
+    background-color: #121b46;
+    border: 2px solid #121b46;
+    cursor: pointer;
+    font-weight: 600;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #e8e7e7;
+    height: 100%;
+    width: 00%;
+    z-index: -1;
+    transition: .3s;
+}
+
+.btn:hover::before {
+    width: 100%;
+}
+
+.btn:hover {
+    color: #121b46;
+}
+
+.btn-explore {
+    background: transparent;
+    color: #121b46;
+    margin-left: 20px;
+
+    &::before {
+        background-color: #121b46;
+    }
+
+    &:hover {
+        color: white;
+    }
+}
+
+section {
+    padding: 10rem 9% 2rem;
+    background-color: #cecece;
+}
+
+.home-section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-section .text-content h5 {
+    font-size: 20px;
+    color: #25ad61;
+    font-weight: 500;
+}
+
+.home-section .text-content h2 {
+    font-size: 75px;
+    color: #3d3f56;
+    font-weight: 500;
+}
+
+.home-section .text-content p {
+    max-width: 600px;
+    color: #222;
+    font-weight: 500;
+}
+
+.home-section .image-section img {
+    width: 35vw;
+    animation: bounce 4s ease forwards infinite;
+    object-position: center;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-24px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-24px);
+    }
+}
+
+.home-section .image-section .shadow {
+    background: rgba(0, 0, 0, .4);
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .4);
+    filter: blur(5px);
+    width: 40vw;
+    animation: bounceIn 4s ease forwards infinite;
+}
+
+.home-section .text-content .btn {
+    margin-top: 20px;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: translateY(24px) scale(.5);
+    }
+
+    50% {
+        transform: translateY(0px) scale(1);
+    }
+
+    100% {
+        transform: translateY(24px) scale(.5);
+    }
+}
+
+.Dishe-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.heading {
+    font-size: 2em;
+    text-align: center;
+    margin-top: -8%;
+    font-weight: 600;
+}
+
+.heading span {
+    color: #25ad61;
+    font-weight: 500;
+}
+
+.dishGallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.dishGallery .food-image {
+    height: 300px;
+    width: 280px;
+    padding: 0 25px 0 0;
+    box-shadow: 0 0 3px #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border-radius: 5px;
+    margin-left: 40px;
+}
+
+
+.food-image img {
+    width: 290px;
+    position: absolute;
+    top: -45%;
+}
+
+.inner-text {
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-text h2 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.inner-text p {
+    text-align: left;
+    font-size: 12px;
+    text-align: center;
+    max-width: 250px;
+    color: #555;
+}
+
+.price-section {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-section span {
+    height: 35px;
+    width: 90px;
+    border: 2px solid #25ad61;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: #25ad61;
+    cursor: pointer;
+
+    &::before {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 00%;
+        background: #25ad61;
+        z-index: -1;
+        transition: .3s;
+    }
+
+    &:hover {
+        color: white;
+    }
+
+    &:hover::before {
+        width: 100%;
+    }
+
+    &:nth-child(2) {
+        background-color: #25ad61;
+        color: #fff;
+    }
+
+    &:nth-child(2)::before {
+        background-color: #e8e7e7;
+    }
+
+    &:nth-child(2):hover {
+        color: #25ad61;
+    }
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.about-section .chef-details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.about-section h2 {
+    margin-bottom: 40px;
+}
+
+.chef-image {
+    margin-top: 5%;
+    height: 450px;
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 50px;
+    cursor: pointer;
+}
+
+.chef-image-2 {
+    position: relative;
+    top: 10px;
+}
+
+.chef-image .image-1 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c1c1c1;
+    position: relative;
+    border-radius: 20px;
+    border: 10px solid #25ad61;
+    overflow: hidden;
+
+}
+
+.chef-image-2 .image-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-1 img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    object-fit: contain;
+}
+
+.text-content-1 {
+    border: 3px solid green;
+    width: 100%;
+    height: 100%;
+    bottom: -100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background: linear-gradient(rgba(0, 0, 0, .3), #c1c1c1);
+    transition: .3s ease;
+}
+
+.chef-image:hover .text-content-1 {
+    bottom: 0;
+}
+
+.text-content-1 .effect {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+}
+
+.text-content-1 span {
+    font-size: 2em;
+    font-weight: 600;
+    font-variant: small-caps;
+}
+
+.text-content-1 p {
+    max-width: 400px;
+    font-size: 1em;
+    font-weight: 500;
+    color: #555;
+    text-align: center;
+}
+
+.text-content-1 .text-p {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.facility-section {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icon-section {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px; 
+    width: 100%;  
+}
+
+.icon-text {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .4);
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #e8e7e7;
+    cursor: pointer;
+    margin-top: auto 10px;
+    scale: 0.9;
+    transition: .3s;
+
+    &:hover {
+        scale: 1;
+        border: 2px solid #444;
+    }
+}
+
+.icon-text svg {
+    height: 100px;
+    width: 100px;
+    color: #25ad61;
+}
+
+.icon-text h2 {
+    margin-top: 5px;
+}
+
+.icon-text p {
+    color: #555;
+    font-size: 13px;
+    max-width: 300px;
+    margin-top: 10px;
+}
+
+.Review-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+.Review-section .swiper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.review-image-section {
+    border: 3px solid black;
+    height: 354px;
+    display: flex;
+    margin-left: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-image-section img {
+    height: 300px;
+}
